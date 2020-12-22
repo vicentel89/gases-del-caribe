@@ -17,7 +17,8 @@ import { Link } from "react-router-dom";
 
 const useStyles = makeStyles((theme) => ({
   card: {
-    maxWidth: 600,
+    width: 600,
+    maxWidth: "90%",
     margin: "auto",
     textAlign: "center",
     marginTop: theme.spacing(5),

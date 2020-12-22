@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
 import { makeStyles } from "@material-ui/core/styles";
-import Paper from "@material-ui/core/Paper";
+import Container from "@material-ui/core/Container";
 import List from "@material-ui/core/List";
 import ListItem from "@material-ui/core/ListItem";
 import ListItemAvatar from "@material-ui/core/ListItemAvatar";
@@ -47,7 +47,7 @@ export default function Users() {
   }, []);
 
   return (
-    <Paper className={classes.root} elevation={4}>
+    <Container maxWidth="sm">
       <Typography variant="h6" className={classes.title}>
         Usuarios
       </Typography>
@@ -76,6 +76,6 @@ export default function Users() {
           );
         })}
       </List>
-    </Paper>
+    </Container>
   );
 }
